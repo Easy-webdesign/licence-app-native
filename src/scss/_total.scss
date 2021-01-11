@@ -1,0 +1,25 @@
+.calc__box-total{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px;
+
+    .price-box{
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px;
+
+        span{
+            font-size: 14px;
+            color: $color-blue-text;
+            text-transform: uppercase;
+            line-height: 18px;
+        }
+    }
+
+    button{
+        margin-bottom: 45px;
+    }
+
+    
+}
