@@ -1,0 +1,12 @@
+.calc__box{
+    width: 100%;
+    height: 600px;
+    padding: 20px;
+    background: $bg-light-grey;
+}
+
+@import './btns';
+@import './titles';
+@import './license-plans';
+@import './number-licenses';
+@import './total';

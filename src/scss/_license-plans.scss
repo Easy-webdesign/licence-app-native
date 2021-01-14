@@ -1,0 +1,49 @@
+.calc__box-licenses{
+    li{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px;
+        cursor: pointer;
+        .radio{
+            position: relative;
+            width: 30px;
+            height: 30px;
+            border: 4px solid $border-radio{
+                radius: 100%;
+            }
+            background: $bg-light-grey;
+
+            &.active{
+                border: {
+                    color: $border-active-radio;
+                }
+                &::before{
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    width: 13px;
+                    height: 13px;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    border-radius: 100%;
+                    background: $color-blue;
+                }
+            }
+        }
+        
+        .radio-box{
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            
+        }
+
+        &:hover{
+            outline: 1px solid #B8D7E2;
+            background: #EBF4F7;
+        }
+    }
+}
