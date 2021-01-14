@@ -86,6 +86,17 @@ module.exports = {
         exclude: /node_modules/,
         use: jsLoaders()
       },
+      { 
+        test: /\.(woff|woff2|eot|ttf)$/, 
+        use: [{
+          loader: 'url-loader',
+          options: {
+            limit:  1024,
+            name: 'fonts/[name].[ext]',
+            
+          }
+        }]
+      },
     ],
   }
 }
