@@ -32,7 +32,6 @@ dom.json = async (data = 'data.json') => {
 dom.stateEdit = function(st = null){
     const state = this.state;
     const priceTotal = st ? (st.priceSelected || this.state.priceSelected) * (st.length || this.state.length) : this.state.length * this.state.priceSelected;
-    console.log(priceTotal);
     
     this.state = {...state, ...st, priceTotal}
     return this.state

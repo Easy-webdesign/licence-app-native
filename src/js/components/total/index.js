@@ -9,8 +9,6 @@ class Total extends RenderComponent{
     }
 
     toHtml = (state = dom.stateEdit()) => {
-
-        console.log(state);
         const html = `
             <div class="price-box">
                 <h3 class="title">Total:</h3>
