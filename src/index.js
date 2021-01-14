@@ -1,4 +1,5 @@
 import './scss/index.scss';
+import './scss/fonts.scss';
 import './js/core/utils';
 import RenderComponent from './js/core/render';
 import { AppComponent } from './js/components';
