@@ -30,13 +30,15 @@ class LengthLicenses extends RenderComponent{
     }
 
     onClick = e => {
-        // console.log(typeof +e.target.value);
-        const state = dom.stateEdit({
-            length: +e.target.value
-        })
+        if(e.target.tagName === 'SELECT'){
+            const state = dom.stateEdit({
+                length: +e.target.value
+            })
 
 
-        total.toHtml(state);
+            total.toHtml(state);
+        }
+        
     }
 }
 

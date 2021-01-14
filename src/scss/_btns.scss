@@ -6,4 +6,9 @@ button{
     font-size: 14px;
     text-transform: uppercase;
     background: #33A845;
+    transition: .1s all;
+    cursor: pointer;
+    &:hover{
+        background: #51d665;
+    }
 }
